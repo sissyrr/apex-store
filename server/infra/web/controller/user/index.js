@@ -1,0 +1,15 @@
+const repositoryBuilder = require('../../../../app/domain/user/repository');
+const serviceBuilder = require('../../../../app/domain/user/service');
+const useCaseBuilder = require('../../../../app/usecase/user/login');
+const controllerBuilder = require('./controller');
+
+
+const repository = repositoryBuilder.build();
+const service = serviceBuilder.build(repository);
+const loginUseCase = useCaseBuilder.build(service);
+
+const controller = controllerBuilder.build(loginUseCase);
+
+module.exports = {
+    controller
+}
