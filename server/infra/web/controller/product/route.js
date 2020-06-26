@@ -1,8 +1,8 @@
 const controller = require('./index').controller;
 
 const addRoutes =(router)=>{
-    console.log('add rota ok')
-    router.post('/authenticate',controller.authenticate);
+    router.get('/products',controller.findAll);
+    router.get('/products/:id',controller.findById);
 }
 
 module.exports = {

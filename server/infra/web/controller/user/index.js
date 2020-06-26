@@ -6,13 +6,12 @@ const controllerBuilder = require('./controller');
 const users = [
     {
         id:1,
-        name:'Teste',
-        email:'teste@teste.com',
+        name:'João da Silva',
+        email:'joao@teste.com.br',
         password:'123456',
         roles:['ADM']
     }
 ]
-
 
 const repository = repositoryBuilder.build({users});
 const service = serviceBuilder.build(repository);

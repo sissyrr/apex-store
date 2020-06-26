@@ -7,7 +7,8 @@ class UserController{
     }
 
     async authenticate(req,res){
-        const { credentials } = req.body;
+        const {credentials} = req.body;
+        console.log(credentials)
         const presenter = await this.useCase.execute({credentials})
         return res.json(presenter);
     }
