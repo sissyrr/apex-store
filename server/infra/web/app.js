@@ -1,6 +1,8 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}))
 const apiRouter = express.Router();
 
 require('../web/controller/user/route').addRoutes(apiRouter);

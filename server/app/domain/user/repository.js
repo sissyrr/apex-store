@@ -2,6 +2,7 @@ class UserRepository{
     constructor(params){
         params = params || {}
         this.users = params.users || []
+        this.findByEmail = this.findByEmail.bind(this);
     }
 
     async findByEmail(email){

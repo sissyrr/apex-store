@@ -1,6 +1,7 @@
 class LoginUseCase {
     constructor(service){
         this.service = service;
+        this.execute = this.execute.bind(this);
     }
 
     async execute(params){

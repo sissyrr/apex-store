@@ -1,6 +1,7 @@
 class UserService{
     constructor(repository){
         this.repository = repository;
+        this.findByEmail = this.findByEmail.bind(this);
     }
 
     async findByEmail(email){
