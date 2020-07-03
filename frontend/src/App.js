@@ -8,6 +8,7 @@ import * as actions from './Pages/Products/products.actions'
 
 import LoginPage from './Pages/Login/LoginPage'
 import ProductPage from './Pages/Products/ProductPage';
+import CartPage from './Pages/Cart/CartPage'
 
 window.productActions = actions;
 window.store = store;
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" exact={true} component={ProductPage} />
           <PrivateRoute path="/adm" component={adm} />
           <Route path="/login" component={LoginPage} />
+          <Route path="/cart" component={CartPage} />
         </Switch>
       </Router>
     </Provider>

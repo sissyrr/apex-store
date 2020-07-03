@@ -8,7 +8,23 @@ const controllerBuilder = require('./controller');
 const products = [
     {
         id:1,
-        name:'João da Silva',
+        name:'Produto 1',
+        description:'joao@teste.com.br',
+        price:10.0,
+        image:'teste.png'
+    },
+
+    {
+        id:2,
+        name:'Produto 2',
+        description:'joao@teste.com.br',
+        price:10.0,
+        image:'teste.png'
+    },
+
+    {
+        id:3,
+        name:'Produto 3',
         description:'joao@teste.com.br',
         price:10.0,
         image:'teste.png'
